@@ -21,5 +21,6 @@ BMI = weight/(heightinmetres**2)
 # Print BMI to 2 decimal places using the '2f' here as gives a floating number to decimal places
 print ('BMI is {:.2f}.'.format(BMI))
 
+# References
 # https://docs.python.org/3/library/functions.html python built in functions
 # https://www.w3schools.com/python/python_numbers.asp python numbers w3schools

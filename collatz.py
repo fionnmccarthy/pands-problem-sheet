@@ -10,7 +10,7 @@
 integer = int(input("Please input a positive number:"))
 
 # Integer must be positive therefore where greater than zero execute 
-# program ends when equal to 1
+# program ends when it is equal to 1
 
 if integer > 0:                             # Check number integer inputted is positive
     while integer != 1:                     # While loop used as program stops when integer equals 1
@@ -21,4 +21,9 @@ if integer > 0:                             # Check number integer inputted is p
             integer = (3 * integer + 1)     # If number is not even then muliply by 3 and addq
 else: 
     print("That number is not positive! Please input a positive number.")
+
+
+# References
+# https://www.w3schools.com/python/python_conditions.asp 28/02/20201
+# https://www.w3schools.com/python/python_while_loops.asp 28/02/2021
 

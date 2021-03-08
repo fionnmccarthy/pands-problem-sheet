@@ -15,5 +15,6 @@ input_string = input('Please enter a sentence:')
 print(input_string[::-2])
 
 
+# References
 # https://www.journaldev.com/23584/python-slice-string for the string slicing formula
 # https://docs.python.org/3/library/functions.html python built in functions
