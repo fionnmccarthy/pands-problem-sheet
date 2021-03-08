@@ -4,10 +4,9 @@
 # 
 # author: Fionn McCarthy - G00301126.
 
-# https://www.w3schools.com/python/python_datetime.asp 
-import datetime 
 
-#datetime.datetime.today()
+import datetime # https://www.w3schools.com/python/python_datetime.asp 
+
 
 # .today() gets the current datetime
 # .weekday() gets the weekday of the datetime

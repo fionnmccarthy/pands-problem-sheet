@@ -22,5 +22,5 @@ BMI = weight/(heightinmetres**2)
 print ('BMI is {:.2f}.'.format(BMI))
 
 # References
-# https://docs.python.org/3/library/functions.html python built in functions
-# https://www.w3schools.com/python/python_numbers.asp python numbers w3schools
+# https://docs.python.org/3/library/functions.html python built in functions 28/02-2021
+# https://www.w3schools.com/python/python_numbers.asp python numbers w3schools 28/02-2021

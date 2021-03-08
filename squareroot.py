@@ -23,7 +23,7 @@ if number > 0:                                                                  
     Squareroot = Sqrt(number)                                                   # If posotove then apply Sqrt() function to number 
     print("The approimate squareoot of {} is {} ".format(number, Squareroot))   # Printing result 
 else:
-    print("Please enter a positive number")                                     # Number must be positive
+    print("Please enter a positive number")                                     # Number must be positive to get root
 
 # https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo 01/03/2021
 # https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/ 01/03/2021

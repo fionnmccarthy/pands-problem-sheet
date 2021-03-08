@@ -10,7 +10,7 @@ input_string = input('Please enter a sentence:')
 # As we want the full length of the string we do no enter the 'start_pos' or the 'end_pos' as we will use teh full string.
 # The '-' below is used to reverse teh string.
 # The '2' is used to print every second letter. 
-# Combining the above we now reverse the string and print every second letter. 
+# Combining the above we now reverse the string and print every second letter
 
 print(input_string[::-2])
 
