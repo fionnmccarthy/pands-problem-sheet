@@ -5,6 +5,7 @@
 # author: Fionn McCarthy - G00301126.
 
 # As it was not speciifed I counted the number of e's and E's within the text file. 
+# File name psf.txt (source in references)
 
 filename = str(input("Please enter the name of the text file:")) # this line instructs the user to input the name of the text file
 
@@ -12,6 +13,9 @@ with open(filename, "r") as f:  #this line opens the file inputted (filename) in
     filedata = f.read() #read() reads the file and returns the specified number of bytes in the file 
     letter_count = filedata.count("e") + filedata.count("E") #count() counts the number of e's in the data that was read from the file
     print(letter_count) 
+
+# Input: psf.txt
+# Output: 531
 
 
 # References 
