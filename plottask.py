@@ -6,3 +6,12 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+
+x = np.arange(0,4)
+
+fx = x 
+
+gx = x*x
+
+hx = x*x*x
+
