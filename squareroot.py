@@ -12,9 +12,10 @@
 # I decided to use 1,000,000 iterations here although it may take longer to run it will be more accurate 
 
 # Below I define my squareroot funtion Sqrt() and also the number of iterations
-def Sqrt(x_i, iterations = 1000000): # number of iterations must be large to get better approximation of root (from research)
+def Sqrt(x_i): 
     n = float(x_i)
-    for i in range(iterations):      
+    precision = 10**(-10)              
+    while abs(n-x_i*x_i) > precision:   # loop for precision
         x_i =  (x_i + n / x_i) / 2      # x_i := (x_i + n / x_i) / 2 is formula used from research  
     return x_i
 
