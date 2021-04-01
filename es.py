@@ -5,21 +5,22 @@
 # author: Fionn McCarthy - G00301126.
 
 # As it was not speciifed I counted the number of e's and E's within the text file. 
-# File name psf.txt (source in references)
+# Input: python es.py psf.txt
 
-filename = str(input("Please enter the name of the text file:")) # this line instructs the user to input the name of the text file
+
+import sys #
+filename = sys.argv[1] # takes the first command line argument 
 
 with open(filename, "r") as f:  #this line opens the file inputted (filename) in read mode ("r")
     filedata = f.read() #read() reads the file and returns the specified number of bytes in the file 
-    letter_count = filedata.count("e") + filedata.count("E") #count() counts the number of e's in the data that was read from the file
-    print(letter_count) 
+    print(filedata.count('e')) #count() counts the number of e's in the data that was read from the file
 
-# Input: psf.txt
-# Output: 531
+# Output: 526
 
 
 # References 
 # http://textfiles.com/stories/psf.txt text file source accessed on 11/03/2021
 # https://www.w3schools.com/python/ref_file_read.asp read() on 11/03/2021
 # https://www.w3schools.com/python/ref_list_count.asp count() on 11/03/2021
+# https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python file on command line 01/04/2021
 
