@@ -243,14 +243,18 @@ plt.savefig('plottask_output.png')
 plt.show()
 ```
 ### Solution:
-1. 
-2. 
-3. 
-4. 
-5.
-6.
-7.
-8.
+1. The numpy and matplotlib.pupplot modules are imported in order to work with the array of numbers and then also in order to generate the plot of the given functions in the given range 0 to 4.
+2. First I defined the functions to be plotted f(x), g(x) and h(x).
+3. The plt.plot() function is used in order to plot f(x). It is plotted with square markers, purple colour, line style of':', line width of 3 and also teh label f(x) here is needed for the legend.
+4. The plt.plot() function is used in order to plot g(x). It is plotted with square markers, red colour, line style of':', line width of 3 and also teh label g(x) here is needed for the legend.
+5. The plt.plot() function is used in order to plot h(x). It is plotted with square markers, green colour, line style of':', line width of 3 and also teh label h(x) here is needed for the legend.
+6. I created two font types font1 anf font2 for teh plot. Font1 will be used for the title and dofnt2 will be used for teh axis labels. 
+7. I specified mt title string and to use font1 font type using plt.title.
+8. I used plt.xlabel and plt.ylabel to label each axis and specified to use font2 font type.
+9. In order to change how teh grid would look i used plt.grid to set the colour, style and width of the grid lines of the plot.
+10. I then used plt.legend to include a legend on the plot, this will use teh labels I specified in plt.plot()
+11. The image outputted form the above plot was saved using the plt.savefig() to save this plot before viewing.
+12. Plt.show() then displays teh output form the plot. This can be seen below. 
 #### Plot Output:
 ![xplotoutput](plottask_output.png) 
 
