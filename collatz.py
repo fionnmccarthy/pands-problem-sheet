@@ -7,9 +7,9 @@
 # author: Fionn McCarthy - G00301126.
 
 # Ask the user to input a positive number
-integer = int(input("Please input a positive number:"))
+integer = int(input("Please input a positive integer:"))
 
-# Integer must be positive therefore where greater than zero execute 
+# Integer must be positive therefore where greater than zero execute the code block
 # program ends when it is equal to 1
 
 if integer > 0:                             # Check number integer inputted is positive

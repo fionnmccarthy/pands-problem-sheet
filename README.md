@@ -23,11 +23,12 @@ print ('BMI is {:.2f}.'.format(BMI))
 ```
 ### Solution:
 1. I used the input() fucntion in order to take an input from a user of height in centimeters and weight in kilogrammes. The inputs are both taken in as floats in order to allow for decimal point numbers. 
-2. The height in centimeters is then coverted to height in meters and is stored in the variable heightinmetres.
+2. The height in centimeters is then coverted to height in meters and is stored in the object 'heightinmetres'.
 3. The formula for caluclating BMI is used by divide the height in meters squared into the weight in kilogrammes.
 4. We then print the result for BMI using the print().
 ### Input: 
 **Please enter weight(kg): 65**
+
 **Please enter height(cm): 180**
 ### Outputput: 
 **BMI is 20.06.**
@@ -46,9 +47,9 @@ print(input_string[::-2])
 ### Solution:
 1. Initially the user is asked to input a sentence and the this is then called 'input_string'.
 2. The method of string slicing is used in order to create a substring from the exisitng string that has been inputted. 
-3. The syntax for this method is input_string[starting_position : end_position : step]. 
-4. We will use teh full string in this case so there is no need to specify a start and end psootion here. For teh step we will use a negative in order to reverse the string and the number 2 would mean stepping every second letter. Therefore -2 being every second letter in reverse order.
-5. This is then printed in order to return teh string inputted by the user in reverse order every second letter. 
+3. The syntax for this method is input_string [ starting_position : end_position : step ]. 
+4. We will use the full string in this case so there is no need to specify a start and end position here. For the step we will use a negative in order to reverse the string and the number 2 would mean stepping every second letter. Therefore -2 being every second letter in reverse order.
+5. This is then printed in order to return the string inputted by the user in reverse order every second letter. 
 ### Input:
 **Please enter a sentence: The quick brown fox jumps over the lazy dog.**
 ### Outputput:
@@ -79,8 +80,8 @@ else:
     print("That number is not positive! Please input a positive number.")
 ```
 ### Solution:
-1. The user is instructed to enter a positive integer, this is taken as an integer on teh input and stored as 'integer'.
-2. The if statement is used in order to execute the next block of code only if the number is greater than zero (positive), if it is not positive teh user will be instructed to enter a positive integer.
+1. The user is instructed to enter a positive integer, this is taken as an integer on the input and stored as 'integer'.
+2. The if statement is used in order to execute the next block of code only if the number is greater than zero (positive), if it is not positive the user will be instructed to enter a positive integer.
 3. The next block of code will be executed when the integer is positive which is a while loop.
 4. The while loop will continue to run until the number reaches 1.
 5. In the while loop first the number is printed then it will run an if else statement.
@@ -126,8 +127,8 @@ else:
     print("It is the weekend, yay!") 
 ```
 ### Solution:
-1. From teheresearch I fount the module datetime can be used to work with dates as date objects.
-2. In orde to get what day of the week it is we used datetime.datetime.today().weekday(). This will return the number (0 to 6) day of the week from the timestamp of execution.
+1. From the research I found the module datetime can be used to work with dates as date objects.
+2. In order to get what day of the week it is we used datetime.datetime.today().weekday(). This will return the number (0 to 6) day of the week from the datetime of execution of teh script.
 3. Monday was 0 and Sunday was 6, therefore 0 to 4 were weekdays and 5 to 6 were weekends.
 4. Using the above an if statement was used, if today the day number from the current datetime was less than 5 it would be a week day or else it would be a weekend.  
 ### References:
@@ -163,12 +164,12 @@ else:
     print("Please enter a positive number") 
 ```
 ### Solution:
-1. Initially I define the function Sqrt(), where I set out what the function will do when ever it is called upon. Form the research I found..
+1. Initially I define the function Sqrt(), where I set out what the function will do when ever it is called upon. From the research I found..
 2. 
 3. 
 4. The user is asked to input a positive number, it is set as a float to enable a decimal point number being entered here.  
 5. The if statement is used in order to error handle a negative number being entered. 
-6. Therefore if teh number is greatwer than 1 the blcok of code will be executed, which willl apply the sqrt() function defined previously to teh number entered and store it in 'Squareroot'.
+6. Therefore if the number is greater than 1 the block of code will be executed, which will apply the sqrt() function defined previously to the number entered and store it in 'Squareroot'.
 7. The squareroot of the number is then printed. 
 ### Input:
 **Enter a positive number: 14.5**
@@ -196,10 +197,10 @@ with open(filename, "r") as f:
 ### Solution:
 1. The sys module is imported here as it will enable me to take the filename as an argument on the command line.
 2. The sys.argv[1] takes the first command line argument.
-3.  I looked for a text file online in order to use for this program, it is called psf.txt and is referneced below. 
-4. The code will then open the file that was given on the command line in in read more "r". 
-5. The files data is then stored in an object called filedata using the read() .  function as the data is read and then stored.
-6. The function count() is used in order to count the number of e's in the filedata and prin the corresponding value. 
+3.  I looked for a text file online in order to use for this program, it is called psf.txt and is referenced below. 
+4. The code will then open the file that was given on the command line in read more "r". 
+5. The files data is then stored in an object called filedata using the read() function as the data is read and then stored.
+6. The function count() is used in order to count the number of e's in the filedata and print the corresponding value. 
 ### Command line:
 **python es.py psf.txt**
 ### Outputput:
@@ -243,18 +244,18 @@ plt.savefig('plottask_output.png')
 plt.show()
 ```
 ### Solution:
-1. The numpy and matplotlib.pupplot modules are imported in order to work with the array of numbers and then also in order to generate the plot of the given functions in the given range 0 to 4.
-2. First I defined the functions to be plotted f(x), g(x) and h(x).
-3. The plt.plot() function is used in order to plot f(x). It is plotted with square markers, purple colour, line style of':', line width of 3 and also teh label f(x) here is needed for the legend.
-4. The plt.plot() function is used in order to plot g(x). It is plotted with square markers, red colour, line style of':', line width of 3 and also teh label g(x) here is needed for the legend.
-5. The plt.plot() function is used in order to plot h(x). It is plotted with square markers, green colour, line style of':', line width of 3 and also teh label h(x) here is needed for the legend.
-6. I created two font types font1 anf font2 for teh plot. Font1 will be used for the title and dofnt2 will be used for teh axis labels. 
-7. I specified mt title string and to use font1 font type using plt.title.
+1. The numpy and matplotlib.pypplot modules are imported in order to work with the array of numbers and then also in order to generate the plot of the given functions in the given range 0 to 4.
+2. First I defined the functions to be plotted f(X), g(X) and h(X).
+3. The plt.plot() function is used in order to plot f(X). It is plotted with square markers, purple colour, line style of ':', line width of 3 and also the label f(X) here is needed for the legend.
+4. The plt.plot() function is used in order to plot g(X). It is plotted with square markers, red colour, line style of ':', line width of 3 and also the label g(X) here is needed for the legend.
+5. The plt.plot() function is used in order to plot h(X). It is plotted with square markers, green colour, line style of ':', line width of 3 and also the label h(X) here is needed for the legend.
+6. I created two font types font1 anf font2 for the plot. Font1 will be used for the title and font2 will be used for the axis labels. 
+7. I specified the title string and to use font1 font type using plt.title.
 8. I used plt.xlabel and plt.ylabel to label each axis and specified to use font2 font type.
-9. In order to change how teh grid would look i used plt.grid to set the colour, style and width of the grid lines of the plot.
-10. I then used plt.legend to include a legend on the plot, this will use teh labels I specified in plt.plot()
+9. In order to change how the grid would look i used plt.grid to set the colour, style and width of the grid lines of the plot.
+10. I then used plt.legend to include a legend on the plot, this will use the labels I specified in plt.plot()
 11. The image outputted form the above plot was saved using the plt.savefig() to save this plot before viewing.
-12. Plt.show() then displays teh output form the plot. This can be seen below. 
+12. Plt.show() then displays the output form the plot. This can be seen below. 
 #### Plot Output:
 ![xplotoutput](plottask_output.png) 
 

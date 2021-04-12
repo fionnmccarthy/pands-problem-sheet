@@ -24,7 +24,7 @@ plt.plot(hx, marker = 's', color = 'green' , ls = ':', lw = '3', label = 'h(x)')
 font1 = {'family':'serif','color':'darkblue','size':15} #setting font1 type
 font2 = {'family':'serif','color':'darkred','size':12} #setting font2 type
 
-plt.title("Plot of f(x)=x, g(x)=X^2 & h(x)=x^3 in the range[0,4]", fontdict = font1) #include plot title with font2
+plt.title("Plot of f(X)=X, g(X)=X^2 & h(X)=X^3 in the range[0,4]", fontdict = font1) #include plot title with font2
 plt.xlabel("X-axis", fontdict = font2) #include x-axis label with font2
 plt.ylabel("Y-axis", fontdict = font2) #include y-axis label with font2
 
@@ -36,3 +36,4 @@ plt.show()
 
 
 # https://www.w3schools.com/python/matplotlib_intro.asp w3schools tutorial matplotlib 01/04/2021
+# https://matplotlib.org/ 02/04/2021

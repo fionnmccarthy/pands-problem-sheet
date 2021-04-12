@@ -1,11 +1,11 @@
 # bmi.py
 # Weely Task 02.
 # This program calcluates a person's Body Mass Index (BMI) by inputting height(cm) and weigh(kg). 
-# The program then coverts the height to metres aapplies the BMI formula.
+# The program then coverts the height to metres and applies the BMI formula.
 # The BMI formula is weight(kg) divided by height(m) squared.
 # Author: Fionn McCarthy - G00301126.
 
-# The user is instructed to enter wieght in kg and height in cm.
+# The user is instructed to enter weight in kg and height in cm.
 # We must set the input to be a float in order to allow for decimal place values eg 88.5kg
 weight = float(input('Please enter weight(kg):'))
 height = float(input('Please enter height(cm):'))

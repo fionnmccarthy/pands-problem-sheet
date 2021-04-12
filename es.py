@@ -4,11 +4,10 @@
 # The program should take the filename from an argument on the command line.
 # author: Fionn McCarthy - G00301126.
 
-# As it was not speciifed I counted the number of e's and E's within the text file. 
 # Input: python es.py psf.txt
 
 
-import sys #
+import sys #import sys module to take an argument on teh command line
 filename = sys.argv[1] # takes the first command line argument 
 
 with open(filename, "r") as f:  #this line opens the file inputted (filename) in read mode ("r")
