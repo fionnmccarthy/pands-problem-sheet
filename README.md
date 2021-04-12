@@ -149,32 +149,34 @@ else:
 **This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.**
 ### Code:
 ```python
-def Sqrt(x_i): 
-    n = float(x_i)
-    precision = 10**(-10)              
-    while abs(n-x_i*x_i) > precision:   
-        x_i =  (x_i + n / x_i) / 2      
-    return x_i
+def Sqrt(n): 
+    n = float(n)
+    x1 = n/2    # x1 formula is n divide by 2
+    x2 = (x1 + n/x1) /2 #formula for x2
+    while x2 != x1:   # loop until x1 and x2 are equal
+        x1 = x2 
+        x2 =  (x1 + n / x1) / 2      # x_i := (x_i + n / x_i) / 2 is formula used from research  
+    return x1
 
 number = float(input("Enter a positive number:"))                               
 if number > 0:                                                                  
-    Squareroot = Sqrt(number)                                                   
-    print("The approximate squareroot of {} is {} ".format(number, Squareroot))   
+    Squareroot = Sqrt(number)                                                    
+    print("The approximate squareoot of {} is {} ".format(number, round(Squareroot,1)))   
 else:
-    print("Please enter a positive number") 
+    print("Please enter a positive number")  
 ```
 ### Solution:
-1. Initially I define the function Sqrt(), where I set out what the function will do when ever it is called upon. From the research I found..
-2. 
-3. 
+1. Initially I define the function Sqrt(), where I set out what the function will do when ever it is called upon. From the research I found the Newtons Method to be the most commonly used and a lot easier to implement.
+2. The function takes in the positive float number (n) from the user and takes the first approximation (x1) which is that number divide by 2. It then gets the better approximate (x2) which is gicen by the formula  x2 = (x1 + n/x1) * 0.5.
+3. A while loop is then used to loop for precision here where the while loop will continue to execute the block of code until x1 equals x2. It starts by setting x1 = x2 and calculating a new value for x2 (a better approximation). When x1 equals x2 it will return the appproximate value (x1).
 4. The user is asked to input a positive number, it is set as a float to enable a decimal point number being entered here.  
 5. The if statement is used in order to error handle a negative number being entered. 
 6. Therefore if the number is greater than 1 the block of code will be executed, which will apply the sqrt() function defined previously to the number entered and store it in 'Squareroot'.
-7. The squareroot of the number is then printed. 
+7. The squareroot of the number is then printed to one decimal place. 
 ### Input:
 **Enter a positive number: 14.5**
 ### Outputput:
-**The approximate squareoot of 14.5 is 3.8078865529319628**
+**The approximate squareoot of 14.5 is 3.8**
 ### References:
 1. https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo 01/03/2021
 2. https://www.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/ 01/03/2021
