@@ -23,7 +23,7 @@ print ('BMI is {:.2f}.'.format(BMI))
 ```
 ### Solution:
 1. I used the input() fucntion in order to take an input from a user of height in centimeters and weight in kilogrammes. The inputs are both taken in as floats in order to allow for decimal point numbers. 
-2. The height in centimeters is then coverted to height in meters and is stored in the object 'heightinmetres'.
+2. The height in centimeters is then coverted to height in meters and is stored in the variable 'heightinmetres'.
 3. The formula for caluclating BMI is used by divide the height in meters squared into the weight in kilogrammes.
 4. We then print the result for BMI using the print().
 ### Input: 
@@ -45,7 +45,7 @@ input_string = input('Please enter a sentence:')
 print(input_string[::-2])
 ```
 ### Solution:
-1. Initially the user is asked to input a sentence and the this is then called 'input_string'.
+1. Initially the user is asked to input a sentence and this is then called 'input_string'.
 2. The method of string slicing is used in order to create a substring from the exisitng string that has been inputted. 
 3. The syntax for this method is input_string [ starting_position : end_position : step ]. 
 4. We will use the full string in this case so there is no need to specify a start and end position here. For the step we will use a negative in order to reverse the string and the number 2 would mean stepping every second letter. Therefore -2 being every second letter in reverse order.
@@ -80,12 +80,12 @@ else:
     print("That number is not positive! Please input a positive number.")
 ```
 ### Solution:
-1. The user is instructed to enter a positive integer, this is taken as an integer on the input and stored as 'integer'.
+1. The user is instructed to enter a positive integer, this is taken as an integer on the input and stored as the variable 'integer'.
 2. The if statement is used in order to execute the next block of code only if the number is greater than zero (positive), if it is not positive the user will be instructed to enter a positive integer.
 3. The next block of code will be executed when the integer is positive which is a while loop.
 4. The while loop will continue to run until the number reaches 1.
 5. In the while loop first the number is printed then it will run an if else statement.
-6. The if else staement runs by if the number is even it will divide the current number by 2 or else if it is odd it will multiply the number by 3 and add 1 to it. this loop will continue to print the number reached until it gets to 1.
+6. The if else staement runs by if the number is even it will divide the current number by 2 or else if it is odd it will multiply the number by 3 and add 1 to it. This loop will continue to print the number reached until it gets to 1.
 7. Once 1 has been reached the program will stop.
 ### Input:
 **Please input a positive number: 10**
@@ -167,7 +167,7 @@ else:
 ```
 ### Solution:
 1. Initially I define the function Sqrt(), where I set out what the function will do when ever it is called upon. From the research I found the Newtons Method to be the most commonly used and a lot easier to implement.
-2. The function takes in the positive float number (n) from the user and takes the first approximation (x1) which is that number divide by 2. It then gets the better approximate (x2) which is gicen by the formula  x2 = (x1 + n/x1) * 0.5.
+2. The function takes in the positive float number (n) from the user and takes the first approximation (x1) which is that number divide by 2. It then gets the better approximate (x2) which is given by the formula  x2 = (x1 + n/x1) * 0.5.
 3. A while loop is then used to loop for precision here where the while loop will continue to execute the block of code until x1 equals x2. It starts by setting x1 = x2 and calculating a new value for x2 (a better approximation). When x1 equals x2 it will return the appproximate value (x1).
 4. The user is asked to input a positive number, it is set as a float to enable a decimal point number being entered here.  
 5. The if statement is used in order to error handle a negative number being entered. 
@@ -199,7 +199,7 @@ with open(filename, "r") as f:
 ### Solution:
 1. The sys module is imported here as it will enable me to take the filename as an argument on the command line.
 2. The sys.argv[1] takes the first command line argument.
-3.  I looked for a text file online in order to use for this program, it is called psf.txt and is referenced below. 
+3. I looked for a text file online in order to use for this program, it is called psf.txt and is referenced below. 
 4. The code will then open the file that was given on the command line in read more "r". 
 5. The files data is then stored in an object called filedata using the read() function as the data is read and then stored.
 6. The function count() is used in order to count the number of e's in the filedata and print the corresponding value. 
@@ -251,10 +251,10 @@ plt.show()
 3. The plt.plot() function is used in order to plot f(X). It is plotted with square markers, purple colour, line style of ':', line width of 3 and also the label f(X) here is needed for the legend.
 4. The plt.plot() function is used in order to plot g(X). It is plotted with square markers, red colour, line style of ':', line width of 3 and also the label g(X) here is needed for the legend.
 5. The plt.plot() function is used in order to plot h(X). It is plotted with square markers, green colour, line style of ':', line width of 3 and also the label h(X) here is needed for the legend.
-6. I created two font types font1 anf font2 for the plot. Font1 will be used for the title and font2 will be used for the axis labels. 
+6. I created two font types font1 and font2 for the plot. Font1 will be used for the title and font2 will be used for the axis labels. 
 7. I specified the title string and to use font1 font type using plt.title.
 8. I used plt.xlabel and plt.ylabel to label each axis and specified to use font2 font type.
-9. In order to change how the grid would look i used plt.grid to set the colour, style and width of the grid lines of the plot.
+9. In order to change how the grid would look I used plt.grid to set the colour, style and width of the grid lines of the plot.
 10. I then used plt.legend to include a legend on the plot, this will use the labels I specified in plt.plot()
 11. The image outputted form the above plot was saved using the plt.savefig() to save this plot before viewing.
 12. Plt.show() then displays the output form the plot. This can be seen below. 
